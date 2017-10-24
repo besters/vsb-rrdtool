@@ -40,9 +40,10 @@ rrdtool graph mygraph.png --title="Accelerometer" --x-grid SECOND:30:MINUTE:1:MI
 Zde je nutné specifikovat: [--start] [--end]
 
 ## Výsledek:
-
+![alt text](https://github.com/besters/vsb-rrdtool/blob/master/mygraph.png?raw=true)
 
 ## Užitečné odkazy:
 
-**Timestamp generator:**: (http://www.timestampgenerator.com/)
-**Dokumentace RRDtoolu:**: (https://oss.oetiker.ch/rrdtool/doc/rrdtool.en.html)
+**Timestamp generator:** (http://www.timestampgenerator.com/)
+
+**Dokumentace RRDtoolu:** (https://oss.oetiker.ch/rrdtool/doc/rrdtool.en.html)
