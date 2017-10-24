@@ -34,6 +34,9 @@ rrdtool update test_actual.rrd N:1:1:1
 ```
 -> není otestováno, ale mělo by dolpnit aktuální timestamp
 
+
+Krok č.5:
+Vygenerování grafu:
 ```
 rrdtool graph mygraph.png --title="Accelerometer" --x-grid SECOND:30:MINUTE:1:MINUTE:5:0:%H:%M --start -6000 --end -800 --vertical-label "Acc" --rigid --upper-limit 2 --lower-limit -2 DEF:x=test_actual.rrd:x:AVERAGE LINE2:x#000000:x DEF:y=test_actual.rrd:y:AVERAGE LINE2:y#f44265:y DEF:z=test_actual.rrd:z:AVERAGE LINE2:z#2702f7:z
 ```
